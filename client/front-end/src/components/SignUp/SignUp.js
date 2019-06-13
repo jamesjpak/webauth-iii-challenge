@@ -16,32 +16,34 @@ class SignUp extends React.Component {
 
     render() {
         return (
-            <div>
-                <form>
+            <div className='page-container'>
+                <form className='form-container'>
                     <h1> Sign-up to Login!</h1>
 
-                    <p> Username</p>
-                    <input 
-                    name='username' 
-                    required
-                    value={this.state.user.username}
-                    />
+                    <div className = 'align-text'>
+                        <p> Username </p>
+                        <input
+                            name='username'
+                            required
+                            value={this.state.user.username}
+                        />
 
-                    <p> Password </p>
-                    <input
-                    name='password'
-                    required
-                    value={this.state.user.password}
-                    />
+                        <p> Password </p>
+                        <input
+                            name='password'
+                            required
+                            value={this.state.user.password}
+                        />
 
-                    <p> Department </p>
-                    <input
-                    name='department'
-                    required
-                    value={this.state.user.department}
-                    />
-            
+                        <p> Department </p>
+                        <input
+                            name='department'
+                            required
+                            value={this.state.user.department}
+                        />
+                    </div>
                 </form>
+
             </div>
         )
     }
